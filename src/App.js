@@ -35,7 +35,7 @@ function App() {
   const [otro, setOtro] = useState(0);
   const [seleccion, setSeleccion] = useState({
     nombre: "Aceite (1.5l)",
-      precio: 15.49,
+      precio: 1000,
       imagen: Aceite,
   });
 
