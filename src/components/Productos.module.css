@@ -1,0 +1,28 @@
+/* Valores.module.css */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 50px 10px 50px;
+}
+
+.column {
+  margin-right: 20px;
+}
+
+/* Agrega una consulta de medios para cambiar a columna en pantallas más pequeñas */
+@media (max-width: 590px) {
+  .container {
+      flex-direction: column;
+      align-items: center; /* Centra los elementos en el eje horizontal */
+      justify-content: center; /* Centra los elementos en el eje vertical */
+      text-align: center; /* Centra el texto dentro de los elementos */
+  }
+
+  .column {
+      margin-right: 0; /* Elimina el margen en la columna cuando cambia a columna */
+      margin-bottom: 10px; /* Agrega margen inferior para separar elementos en columna */
+  }
+}
